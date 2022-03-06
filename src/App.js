@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { DayForecast } from "./components/DayForecast";
+import { WeeklyForecast } from "./components/WeeklyForecast";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1>Weekly Weather Forecast</h1>
+
+      <div>
+        <WeeklyForecast></WeeklyForecast>
+      </div>
     </div>
   );
 }
